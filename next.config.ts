@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
     },
   },
   basePath: path,
-  assetPrefix: path,
+  env: { NEXT_PUBLIC_BASE_PATH: path },
 };
 
 export default nextConfig;
