@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const basePath = process.env.BASE_PATH ?? "";
+const path = "/my-site";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  basePath,
-  env: { NEXT_PUBLIC_BASE_PATH: basePath },
+  basePath: path,
+  env: { NEXT_PUBLIC_BASE_PATH: path },
 };
 
 export default nextConfig;
